@@ -14,9 +14,9 @@ module.exports = client => {
   client.user.setStatus("dnd");
    var oyun = [
         "Efe!",
-        " Efe 2 ",
+        "NextCode",
         "Buralara Ne Yazarsan Oynuyor Kısmındada Öyle Gozukur.",
-        "asdasfasdsafasf Burada Aynı şeiklde",
+        " Burada Aynı şeiklde",
 
     ];
 

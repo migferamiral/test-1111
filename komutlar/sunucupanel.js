@@ -2,7 +2,6 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 const db = require('quick.db');
-//Çalanın Annesiyle Mesgülüm.
 exports.run = async(client, message, args) => {
   let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
   if(!message.member.hasPermission('SEND_MESSAGES')) return message.reply('Bu komutu kullanabilmek için `Yönetici` iznine sahip olmalısın!')
