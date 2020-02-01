@@ -17,7 +17,7 @@ const snekfetch = require("snekfetch");
 const queue = new Map();
 const YouTube = require("simple-youtube-api");
 const ytdl = require("ytdl-core");
-
+//CodAre
 const app = express();
 app.get("/", (request, response) => {
   console.log(Date.now() + " Ping tamamdır.");
@@ -48,7 +48,7 @@ fs.readdir("./komutlar/", (err, files) => {
     });
   });
 });
-
+//CodAre
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -83,7 +83,7 @@ client.load = command => {
     }
   });
 };
-
+//CodAre
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -115,7 +115,7 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
-
+//CodAre
 client.on("warn", e => {
   console.log(chalk.bgYellow(e.replace(regToken, "that was redacted")));
 });
@@ -144,7 +144,6 @@ client.on("guildMemberAdd", async(member) => {
    } catch(e) { }
   }
 })
-//Efe Tarafından Kodlanmıştır Çalınması Kesinlikle YASAKTIR !
 client.on("guildMemberRemove", async(member) => {
   let sunucupaneli = await db.fetch(`sunucupanel_${member.guild.id}`)
   if(sunucupaneli) {
@@ -166,6 +165,6 @@ client.on("guildMemberRemove", async(member) => {
    } catch(e) { }
   }
 })
-
+//CodAre
 client.login(ayarlar.token);
 
